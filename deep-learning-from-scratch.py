@@ -36,27 +36,8 @@ def XOR(x1, x2):
 	y = AND(s1, s2)
 	return y
 
+def step_function(x):
+	y = x > 0
+	return y.astype(np.int)
+
 if __name__ == '__main__':
-	# AND
-	print(AND(0, 0)) #0
-	print(AND(1, 0)) #0
-	print(AND(0, 1)) #0
-	print(AND(1, 1)) #1
-
-	# NAND
-	print(NAND(0, 0)) #1
-	print(NAND(1, 0)) #1
-	print(NAND(0, 1)) #1
-	print(NAND(1, 1)) #0
-
-	# OR
-	print(OR(0, 0)) #0
-	print(OR(1, 0)) #1
-	print(OR(0, 1)) #1
-	print(OR(1, 1)) #1
-
-	# XOR
-	print(XOR(0, 0)) #0
-	print(XOR(1, 0)) #1
-	print(XOR(0, 1)) #1
-	print(XOR(1, 1)) #0
