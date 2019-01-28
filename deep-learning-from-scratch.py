@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pylab as plt
 
 def AND(x1, x2):
 	x = np.array([x1, x2])
@@ -41,3 +42,8 @@ def step_function(x):
 	return y.astype(np.int)
 
 if __name__ == '__main__':
+	x = np.arange(-5.0, 5.0, 0.1)
+	y = step_function(x)
+	plt.plot(x, y)
+	plt.ylim(-0.1, 1.1)
+	plt.show()
