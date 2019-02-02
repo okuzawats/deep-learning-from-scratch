@@ -18,3 +18,13 @@ class simpleNet:
 
         return loss
 
+net = simpleNet()
+print(net.W)
+
+x = np.array([0.6, 0.9])
+p = net.predict(x)
+print(p)
+
+t = np.array([0, 0, 1])
+loss = net.loss(x, t)
+print(loss)
